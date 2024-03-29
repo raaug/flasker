@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    
+    <p>This is my first webpage.</p>
+
+    <p>Isn't this cool?</p>
+
+    <p>My name is {{ first_name }}</p>
+
+    <p>{{ stuff|title }}</p>
+
+    <h3>Favorite Pizza</h3>
+
+    {% for topping in favorite_toppings %}
+        {% if topping == 41 %}
+            {{ topping + 100 }} <br>
+        {% else %}
+            {{ topping }} <br>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
